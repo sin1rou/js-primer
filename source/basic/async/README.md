@@ -662,7 +662,7 @@ fulFilledPromise.then(value => {
 ```
 
 `Promise.resolve`メソッドで作成した**Fulfilled**の状態となった`Promise`インスタンスに対しても`then`メソッドでコールバック関数を登録できます。
-状態が変化済みの`Promise`インスタンスに`then`メソッドで登録したコールバック関数は、常に非同期なタイミングで実行されます。
+状態が変化済みの`Promise`インスタンスに`then`メソッドで登録したコールバック関数であっても、常に非同期なタイミングで実行されます。
 
 {{book.console}}
 <!-- doctest:async:16 -->
